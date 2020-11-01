@@ -1,0 +1,6 @@
+克隆代码 
+Git clone url ***远程仓库新建项目
+git add***添加当前项目的所有文件到本地缓存
+git commit-m***把文件保存到本地仓库
+git push***向远程仓库推送更新
+git pull***从远程仓库拉取更新
