@@ -1,0 +1,12 @@
+1. 写一个网页 包含有序列表 无序列表 表格（包含合并单元格） 表单（包含文本框，密码框，单选，多选，提交按钮）
+2. 预习css选择器
+id选择器 -css中的id以#来定义
+class选择器-claa中的ID以.来定义，class可以是一组元素的样式
+
+
+***  表格学习地址：https://www.runoob.com/html/html-tables.html
+***  表单学习地址：https://www.runoob.com/html/html-forms.html
+***  CSS选择器学习地址：https://www.runoob.com/css/css-id-class.html
+
+
+***************************（网页最下面的笔记很重要）
