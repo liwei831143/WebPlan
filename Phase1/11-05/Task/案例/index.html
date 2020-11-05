@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>案例</title>
+	<style type="text/css">
+		.container {
+			width:350px;
+			margin-left: auto;
+			margin-right: auto;
+			
+		}
+		/*直接后代选择器 选择.container第一级子元素的所有的p元素*/
+		.container>p {
+			font-size: 14px;
+			/*边框 边框宽度  边框样式 边框颜色*/
+			border:1px solid #ddd;
+			/*文本对齐 left左对齐 center居中对齐 right对齐*/
+			text-align:center;
+			height:30px;
+			/*行高 一般用于文本垂直居中*/
+			line-height: 30px;
+
+		}
+		/*后代选择器 选择.container里面所有的.nomral类的元素*/
+		.container .unnormal {
+			color:pink;
+			/*字体的粗细 bold为粗 normal为正常 bolder为最粗*/
+			font-weight:bold;
+			/*文本的下划线 none是没有 underline是下划线*/
+			text-decoration:underline;
+			/*字体样式 italic是斜体 normal是正常*/
+			font-style:italic;
+			/*字体*/
+			font-family: '宋体'
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<p>
+			<span class="unnormal">标签01</span>
+			<span>标签02</span>
+			<span class="unnormal">标签03</span>
+			<span>标签04</span>
+			<span class="unnormal">标签05</span>
+			<span>标签06</span>
+		</p>
+		<p>
+			<span>标签01</span>
+			<span class="unnormal">标签02</span>
+			<span>标签03</span>
+			<span class="unnormal">标签04</span>
+			<span>标签05</span>
+			<span class="unnormal">标签06</span>
+		</p>
+		<p>
+			<span class="unnormal">标签01</span>
+			<span>标签02</span>
+			<span class="unnormal">标签03</span>
+			<span>标签04</span>
+			<span class="unnormal">标签05</span>
+			<span>标签06</span>
+		</p>
+		<p style="text-align: left;">
+			不缩进不缩进不缩进不缩进不缩进
+		</p>
+		<!-- 文本缩进 text-indent-->
+		<p style="text-align:left;text-indent:20px;">
+			文本缩进文本缩进文本缩进文本缩进
+		</p>
+	</div>
+</body>
+</html>
