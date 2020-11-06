@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>案例</title>
+	<style type="text/css">
+		.div1 {
+			width:100px;
+			height:100px;
+			/*背景颜色*/
+			background-color:#f00;
+		}
+		.div2 {
+			width: 500px;
+			height:500px;
+			background:pink;
+		}
+		.div2 .div2-1 {
+			/*浮动 可以让元素水平排列 可以设置左浮动left或者右浮动right或者没有浮动none*/ 
+			float: left;
+			width:200px;
+			height:500px;
+			background-color:#0ff;
+		}
+		.div2 .div2-2 {
+			float: left;
+			width:200px;
+			height:500px;
+			background-color:#ff0;
+		}
+
+
+		.div3,.div4 {
+			width:100px;
+			height:100px;
+			border:5px solid #000;
+		}
+		.div4 {
+			/*设置溢出部分的显示方式， 可选的有hidden隐藏 scroll滚动 */
+			overflow: hidden;
+		}
+		.div3-1,.div4-1 {
+			width:150px;
+			height:150px;
+			background-color:red;
+		}
+	</style>
+</head>
+<body>
+	<div class="div1"></div>
+	<div class="div2">
+		<div class="div2-1"></div>
+		<div class="div2-2"></div>
+	</div>
+	<div class="div3">
+		<div class="div3-1">我溢出了  <br> 溢出来了 </div>
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div class="div4">
+		<div class="div4-1">我溢出了 <br> 没有溢出来</div>
+	</div>
+</body>
+</html>
