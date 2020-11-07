@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>权重</title>
+	<style type="text/css">
+		/*选择所有class属性的值是zhaojinzhu 的标签*/
+		/*.zhaojinzhu {
+			color:#000;
+		}*/
+		p {
+			color:red;
+		}
+		p {
+			color:#000;
+		}
+		
+
+
+		/*
+			选择器是有权重的
+			权重可以理解为一个值
+			权重值越大永远比权重值小的优先
+		*/
+		id选择器 : 100
+		class选择器 : 10
+		标签选择器 ： 1
+	</style>
+</head>
+<body>
+	<p class="zhaojinzhu" id="ppp">123123</p>
+	<p class="zhaojinzhu">123123</p>
+	<p class="zhaojinzhu">123123</p>
+	<p class="zhaojinzhu">123123</p>
+</body>
+</html>
