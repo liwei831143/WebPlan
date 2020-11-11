@@ -4,17 +4,27 @@
 	<title>定位居中</title>
 	<meta charset="utf-8">
 	<style type="text/css">
-		div{
+		.fang{
+		position: absolute;
+			left: 50%;
+			top: 50%;
+			margin-left:-100px;
+			margin-top:-93px;
+			
+			height: 185px;
+			width: 380px;
+		}
+		.juz{
+			position: absolute;
 			width: 100px;
 			height: 100px;
 			background-color: red;
-			position: fixed;
-			margin-top:250px;
-			margin-left: 500px; 
 		}
 	</style>  
 </head>
 <body>
-	<div></div>
+	<div class="fang">
+		<div class="juz"></div>
+	</div>
 </body>
 </html>
