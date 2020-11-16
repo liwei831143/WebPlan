@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>案例</title>
+	<style type="text/css">
+		.wrapper {
+			width:500px;
+			height:500px;
+			position:absolute;
+			top:50%;
+			left:50%;
+			transform:translate(-50%,-50%);
+			background-color:#fff;
+			border:10px solid #000;
+		}
+		.box {
+			position:absolute;
+			top:50%;
+			left:50%;
+			transform:translate(-50%,-50%);
+			background-color:#fff;
+			border:2px solid #000;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper"></div>
+	<script type="text/javascript">
+		var count = 500;
+		var arr = []
+		for(var i = count; i > 0; i-- ) {
+			if(i % 16 === 0) {
+				var div = document.createElement('div')
+				div.classList.add('box')
+				div.style.width = i +'px'
+				div.style.height = i +'px'
+				arr.push(div)
+			}
+		}
+		for (var j = 0; j < arr.length; j++) {
+			if(j < arr.length - 1) {
+				arr[j].appendChild(arr[j+1])
+			}
+		}
+		console.log(arr)
+
+		var box = document.querySelector('.wrapper');
+		box.appendChild(arr[0])
+	</script>
+</body>
+</html>
