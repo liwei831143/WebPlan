@@ -9,14 +9,13 @@
 	    padding: 0;
 	    
 	}
-	/*.wapper{
-		background-image:url(./image/wap.png);
+	.wapper{
+		background-image:url(./image/wap.jpg);
 		width: 100%;
-		height: 200px;
-		top:0;
+		height: 520px;
 		background-repeat: no-repeat;
 		background-size: contain;
-	}*/
+	}
     .nav{
     	width: 100%;
     	background: #006ABE;
@@ -43,7 +42,7 @@
     	width: 100px;
     	height:40px;
     	text-align: center;
-    /*	transition:background-color 0.4s;*/
+    	transition:background-color 0.4s;
     }
     .nr .nav_r li:hover{
     	background: #3333CC;
@@ -56,10 +55,15 @@
     	color:#fff;
     }
     .nr .nav_r li:hover div{
-    	width: 300px;
-    	height: 200px;
-    	background:pink;
-    	display: block;
+    	opacity: 1;
+
+    }
+    .nr .nav_r li div{
+        width: 300px;
+        height: 200px;
+        background:pink;
+        opacity: 0;
+        transition:opacity .4s ease;
 
     }
     .kuai p{
@@ -79,14 +83,16 @@
 	    <div class="nav_l">站长之家</div>
 	    <div class="nav_r">
 	    	<ul>
-	    		<li><a href="#">站长工具</a>
+	    		<li>
+                    <a href="#">站长工具</a>
 	    			<div class="kuai">
-	    				<img src="./image/ty.png">
-	    			<p>星网大数据<br>提供每日热点、行业字库、关键分析<br>
+	    			    <p>
+                            星网大数据<br>提供每日热点、行业字库、关键分析<br>
 	    			    星网大数据<br>提供每日热点、行业字库、关键分析<br>
-	    		        星网大数据<br>提供每日热点、行业字库、关键分析</div>
-	    		    </p>
-	    		    </li>
+	    		        星网大数据<br>提供每日热点、行业字库、关键分析
+                        </p>
+                    </div>
+	    		 </li>
 	    		<li><a href="#">站长素材</a><div class="kuai"></li>
 	    		<li><a href="#">源代码</a><div class="kuai"></li>
 	    		<li><a href="#">网站排行</a><div class="kuai"></li>
