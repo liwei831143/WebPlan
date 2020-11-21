@@ -54,10 +54,71 @@
 			padding:4px 10px;
 			border-radius:4px;
 		}
+
+
+		.main {
+			width:546px;
+			margin-left:auto;
+			margin-right:auto;
+		}
+		.logo {
+			width:270px;
+			margin-left:auto;
+			margin-right:auto;
+		}
+		.logo img {
+			width:100%;
+		}
+
+		.search {
+			width: 547px;
+		}
+		.search>div {
+			float: left;
+		}
+		.search::after {
+			content:'';
+			display:block;
+			clear:both;
+		}
+
+		.search .search_inner {
+			float: left;
+			position:relative;
+		}
+		.search .search_inner input {
+			width: 427px;
+			height:40px;
+			border:2px solid #4e71f2;
+			border-right:none;
+			border-radius:10px 0 0 10px;
+			user-select: none;
+			outline: none;
+			padding-left:10px;
+		}
+		.search .search_inner img {
+			width:30px;
+			position:absolute;
+			top:7px;
+			right:20px;
+		}
+		.search .search_btn {
+			float: right;
+		}
+		.search .search_btn button{
+			width:108px;
+			height:44px;
+			background: #4e6ef2;
+			color:#fff;
+			border:none;
+			border-radius:0 10px 10px 0;
+			font-size: 16px;
+		}
 	</style>
 </head>
 <body>
 	<div class="wrapper">
+		<!-- 顶部导航 -->
 		<div class="nav">
 			<div class="nav_l">
 				<ul>
@@ -73,6 +134,23 @@
 			<div class="nav_r">
 				<span>设置</span>
 				<button>登录</button>
+			</div>
+		</div>
+
+		<!-- 搜索 -->
+		<div class="main">
+			<div class="logo">
+				<img src="https://www.baidu.com/img/dong_ff9a072b5730a7cd566e336bfdcca412.gif">
+			</div>
+			<div class="search">
+				<div class="search_inner">
+					<input type="text" />
+					<img src="./images/crame.png">
+
+				</div>
+				<div class="search_btn">
+					<button>百度一下</button>
+				</div>
 			</div>
 		</div>
 	</div>
