@@ -8,6 +8,13 @@
 			margin:0;
 			padding:0;
 		}
+		a {
+			text-decoration: none;
+			color:#fff;
+		}
+		ul {
+			list-style-type:none;
+		}
 		.nav {
 			height: 40px;
 			background-color: #006abe;
@@ -19,6 +26,32 @@
 			margin-left:auto;
 			margin-right:auto;
 		}
+		.nav .nav_l {
+			float: left;
+		}
+		.nav .nav_r {
+			float: right;
+		}
+		.nav .nav_r li {
+			width:100px;
+			text-align: center;
+			float: left;
+			margin-left:20px;
+			font-size:14px;
+			transition:background-color 0.4s;
+		}
+		.nav .nav_r li:hover {
+			background-color: #006;
+		}
+		/*.nav .nav_r li:hover div {
+			display:block;
+		}
+		.nav_r li div {
+			width:300px;
+			height:300px;
+			background-color: red;
+			display:none;
+		}*/
 	</style>
 </head>
 <body>
@@ -26,7 +59,20 @@
 		<div class="nav">
 			<div class="container">
 				<div class="nav_l">站长之家</div>
-				<div class="nav_r"></div>
+				<div class="nav_r">
+					<ul>
+						<li>
+							<a href="#">站长之家</a>
+							<div></div>
+						</li>
+						<li><a href="#">站长工具</a><div></div></li>
+						<li><a href="#">站长素材</a><div></div></li>
+						<li><a href="#">源码下载</a><div></div></li>
+						<li><a href="#">网站排行</a><div></div></li>
+						<li><a href="#">关注我们</a><div></div></li>
+						<li><a href="#">登陆注册</a><div></div></li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</div>
