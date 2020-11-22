@@ -2,82 +2,113 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title></title>
+	<title>快讯</title>
 	<style type="text/css">
 		*{
 			padding: 0;
 			margin: 0;
 		}
 		body{
-			background: #f8f8f8;
+			background-color: #f2f3f4;
 		}
-		.box{
-			background-color: #fff;
+		.header{
 			width: 800px;
-			line-height: 40px;
+			height: 50px;
+			background-color: #ffffff;
+			line-height: 50px;
 			padding: 0 20px 0;
 		}
-		.head{
-			height: 40px;
-
-		}
-		.head .head_l{
+		.header .header_l{
 			float: left;
+			font-size: 22px;
 		}
-		.head .head_r{
+		.header .header_r{
 			float: right;
-		}
-		.head .head_l span{
-			font-size: 20px;
-		}
-		.head .head_r span{
 			font-size: 14px;
 			color: #595855;
 		}
 		ul{
 			list-style-type: none;
 		}
-		.content li{
-			width: 800px;
+		.liebiao li{
+			width: 840px;
 			height: 30px;
+			line-height: 30PX;
+			background-color: #ffffff;
+			float: left;
+			padding-top:20px;
+		}
+		.liebiao img{
+			float: left;
+			margin-left: 20px;
 			
 		}
-		.content a{
+		.liebiao a{
 			text-decoration: none;
-			color: #333;
+			color: #2c2e3b;
 			float: left;
 			font-size: 16px;
+			margin-left: 10px;
 		}
-		.content span{
+		.liebiao span{
 			float: right;
+			margin-right: 20px;
+			color: #8590a6;
 			font-size: 14px;
-			color: #8590a6
+		}
+		.tuiguang{
+			width: 840px;
+			height: 500px;
+			background-color: #ffffff;
+			margin-top: 50px;
 		}
 	</style>
 </head>
 <body>
 <div class="box">
-	<div class="head">
-		<div class="head_l">
+	<div class="header">
+		<div class="header_l">
 			<img src="">
 			<span>快讯</span>
 		</div>
-		<div class="head_r">
+		<div class="header_r">
 			<span>换一批</span>
-			&nbsp;
-			<span>|</span>
-			&nbsp;
+			<span style="color: #f0f1f3">|</span>
 			<span>更多快讯</span>
 		</div>
 	</div>
-	<div class="content">
+	<div class="liebiao">
 		<ul>
 			<li>
-				
-				<a href="#">如果说你是海上的烟火</a>
+				<img src="./image/ty.png">
+				<a href="#">中国移动与中兴续签战略协议：将围绕5G和6G展开合作</a>
+				<span>12小时前</span>
+			</li>
+			<li>
+				<img src="./image/ty.png">
+				<a href="#">全球游戏机产业2020年预计创收达450亿美元</a>
+				<span>5小时前</span>
+			</li>
+			<li>
+				<img src="./image/ty.png">
+				<a href="#">央视提醒：微信“清粉”APP千万别再用了！</a>
 				<span>2小时前</span>
 			</li>
+			<li>
+				<img src="./image/ty.png">
+				<a href="#">优胜教育总裁陈昊：所有校区恢复正常运营支持</a>
+				<span>1小时前</span>
+			</li>
+			<li>
+				<img src="./image/ty.png">
+				<a href="#">腾讯云11.11 云上盛惠，1核2G云服务器首年88元</a>
+				<span>9小时前</span>
+			</li>
 		</ul>
+	</div>
+	<div class="tuiguang">
+		<div class="nr">
+		</div>
 	</div>
 </div>
 </body>
