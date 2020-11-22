@@ -13,6 +13,13 @@
 			font-size:14px;
 			color:#333;
 		}
+		ul {
+			list-style:none;
+		}
+		a {
+			text-decoration:none;
+			color:#333;
+		}
 		.box {
 			width:800px;
 			background-color: #fff;
@@ -26,7 +33,57 @@
 			float: left;
 			font-size:24px;
 		}
+		.box .box_header .header_l img {
+			width:30px;
+			vertical-align:middle;
+		}
 		.box .box_header .header_r {
+			float: right;
+			color:#999;
+		}
+		.box_content li {
+			height:30px;
+			line-height:30px;
+		}
+		.box_content li>div {
+			float: left;
+			width:30px;
+			height:30px;
+			position:relative;
+		}
+		.box_content li>div::before {
+			content:'';
+			position:absolute;
+			width:16px;
+			height:16px;
+			background-color:rgb(230,241,251);
+			top:0;
+			left:0;
+			right:0;
+			bottom:0;
+			margin:auto;
+			border-radius:50%;
+		}
+		.box_content li>div::after {
+			content:'';
+			position:absolute;
+			width:8px;
+			height:8px;
+			background-color:rgb(83,153,222);
+			top:0;
+			left:0;
+			right:0;
+			bottom:0;
+			margin:auto;
+			border-radius:50%;
+		}
+		.box_content li>a {
+			float: left;
+		}
+		.box_content li>a:hover {
+			color:rgb(83,153,222);
+		}
+		.box_content li>span {
 			float: right;
 			color:#999;
 		}
@@ -36,7 +93,7 @@
 	<div class="box">
 		<div class="box_header">
 			<div class="header_l">
-				<img src="">
+				<img src="./crame.png">
 				<span>快讯</span>
 			</div>
 			<div class="header_r">
@@ -44,11 +101,44 @@
 				&nbsp;
 				<span>|</span>
 				&nbsp;
-				
+
 				<span>更多快讯></span>
 			</div>
 		</div>
-		<div class="box_content"></div>
+		<div class="box_content">
+			<ul>
+				<li>
+					<div>
+					</div>
+					<a href="#">全球游戏机产业2020年预计创收达450亿美元</a>
+					<span>12小时前</span>
+				</li>
+				<li>
+					<div>
+					</div>
+					<a href="#">全球游戏机产业2020年预计创收达450亿美元</a>
+					<span>12小时前</span>
+				</li>
+				<li>
+					<div>
+					</div>
+					<a href="#">全球游戏机产业2020年预计创收达450亿美元</a>
+					<span>12小时前</span>
+				</li>
+				<li>
+					<div>
+					</div>
+					<a href="#">全球游戏机产业2020年预计创收达450亿美元</a>
+					<span>12小时前</span>
+				</li>
+				<li>
+					<div>
+					</div>
+					<a href="#">全球游戏机产业2020年预计创收达450亿美元</a>
+					<span>12小时前</span>
+				</li>
+			</ul>
+		</div>
 	</div>
 </body>
 </html>
