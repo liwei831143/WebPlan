@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		/*1-2*/
+		/*div{
+			width: 100px;
+			height: 100px;
+			background-color: red;
+			border: 10px solid black;
+			margin:100px;上下左右各外100px;
+			padding:10px;上下左右各内填充10px;
+		}*/
+		/*.wrapper{
+			border: 10px solid pink;
+			width: 100px;
+			height: 100px;
+			background-color:red;
+			padding-top: 100px;
+			padding-left: 100px;padding的顺序问题: 4个值默认上右下左
+			                                      3个值是上左右下
+			                                      2个是上下 左右
+			                                      1个是可以单独设置的
+			                                      同border和margin是一样的
+		}
+		.conter{
+			width: 100px;
+			height: 100px;
+			background-color:black;
+		}*/
+		/*div{
+			width: 100px;
+			height: 100px;
+			background-color: red;
+			margin: 10px 20px;margin是外边界不用算在盒模型的计算内
+			padding: 10px 20px 30px;
+			border: 10px solid black;
+			
+		}*/
+		.content1{
+			height: 10px;
+			width: 10px;
+			background-color: #fff;
+		}
+       .content{
+       	width: 10px;
+       	height: 10px;
+       	padding: 10px;
+       	background-color:#000; 
+       }
+       .box{
+       	width: 30px;
+       	height: 30px;
+       	background-color:#0f0;
+       	padding: 10px;
+       }
+       .wrapper{
+       	width: 50px;
+       	height: 50px;
+       	background-color:#000;
+       	padding: 10px;
+       }
+	</style>
+</head>
+<body>
+	<!-- 1. -->
+	<!-- 盒子模型的四部分
+	边框border
+	外边界margin
+	内边距padding
+	盒子内容content（宽width+高height） -->
+<!-- <div>包子包子包子豆腐包子</div> -->
+    <!-- 2 -->
+    <!-- 要想两个盒子都居中只要他们的内容一样大，再外面的盒子套padding内容都是一样的 -->
+<!-- <div class="wrapper">
+	<div class="conter"></div> -->
+	<!-- 3 --><!-- 计算真正可视区颜色的宽高 -->
+	<!-- <div>123</div> -->
+	<!-- 4.远视图 -->
+	<div class="wrapper">
+		<div class="box">
+			<div class="content">
+				<div class="content1"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+</body>
+</html>

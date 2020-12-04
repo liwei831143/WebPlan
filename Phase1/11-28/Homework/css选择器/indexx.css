@@ -1,0 +1,42 @@
+/*#accompany{
+	background-color: pink;
+
+}
+.accompany{
+	background-color: pink;
+
+}
+.yj{
+	color:white;
+
+}
+div{
+	background-color: pink;
+}
+span{
+	background-color: red;
+	font-weight: bold;
+	color: #fff;
+}*/
+/*父子选择器
+em{
+	color: #999;
+}
+strong em{
+	color:pink;
+}*/
+/*直接子元素选择器*/
+/*div > em{
+	background-color:#999;
+	}*/
+/*并列选择器*/
+/*#idDiv > p{
+	background-color: #999;
+}
+.classDiv #idP{
+    background-color:red;
+}*/
+/*分组选择器 用逗号隔开*/
+span,em,strong{
+	background-color: red;
+}
