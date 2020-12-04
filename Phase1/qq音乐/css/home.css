@@ -1,0 +1,32 @@
+.nav_t{
+	/*background-color: red;*/
+	height: 90px;
+
+}
+.logo img{
+	height: 50px;
+	margin-top: 20px;
+}
+.nav_t ul li{
+	float: left;
+	width: 94px;
+	line-height: 90px;
+	text-align: center;
+}
+.nav_t ul li:hover{
+	color:#31c27c;
+}
+.czw{
+	background-color: red;
+
+}
+.nav_t input{
+     width: 220px;
+     height: 38px;
+     font-size: 14px;
+     border:1px solid #ddd;
+     margin-top:25px;
+     border-radius: 4px;
+     text-indent: 10px;
+    
+}

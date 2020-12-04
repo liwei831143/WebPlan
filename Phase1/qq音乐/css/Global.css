@@ -1,0 +1,40 @@
+*{
+	margin: 0;
+	padding: 0;
+
+}
+ul{
+	list-style-type: none;
+}
+a{
+	text-decoration: none;
+	color:inherit;
+}
+
+.container{
+	margin-right: auto;
+	margin-left: auto;
+	width: 1200px;
+	
+
+}
+
+.pull-left{
+	float: left;
+}
+.pull-right{
+	float: right;
+}
+.clearfix::after{
+	content:"";
+	display: block;
+	width: 0;
+	height: 0;
+	clear:both;
+	visibility: hidden;
+}
+
+input{
+	outline:none;
+	border:none;
+}

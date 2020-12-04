@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>最常用 的两栏布局</title>
+	<style type="text/css">
+		/*1.*/
+		/*.right{
+			width: 100px;
+			height: 100px;
+			background-color: pink;
+			position: absolute;
+			right: 0;
+			opacity: 0.5;
+		}
+		.left{
+			height: 100px;
+			background-color: #123;
+			margin-right: 100px;
+
+		}*/
+		/*2.*/
+		/*.box1{
+			background-color: red;
+			margin-right: 50px;
+		}
+		.box2{
+			background-color: green;
+			margin-left: 10px;累加向右移动，这叫做区域不能共用，不能共用一个范围
+		}*/
+		/*3.*/
+		/*.warpper{
+			float:center;*//*解决方法：给两个块级元素div＋个1.父级放在一个区域属性 overflow: hidden;2.让父元素+浮动3.让父元素+定位*//*margin塌陷时也能用到此解决方法
+
+		}*/
+		/*.box3{
+			background-color: red;
+			margin-bottom: 200px;在垂直方向上不显示间距，如何解决？
+			                     上下排列是 大间距还会覆盖小间距的
+			                     左右排列是 会同时显示
+		}
+		.box4{
+			background-color: green;
+			margin-top: 300px;
+		}*/
+		/*4.*/
+		.warpper2{
+			width: 300px;
+			height: 300px;
+			border: 1px solid black;
+			text-align: center;
+			
+		}
+        .content{
+        	color: #fff;
+        	background-color: #123;
+        	width: 100px;
+        	height: 100px;
+        	float: right;
+        	line-height: 100px;
+        }
+	</style>
+</head>
+<body><!-- 1.两栏布局 -->
+<!-- <div class="right"></div>
+<div class="left"></div> -->
+<!-- 2.文本同行显示设置margin自动向右偏移 -->
+<!-- <span class="box1">123</span>
+<span class="box2">345</span> -->
+<!-- 3.垂直方向margin塌陷如何解决 -->
+<!-- <div class="warpper">
+<div class="box3">123</div>
+<div class="box4">409</div> -->
+<!-- 4. -->
+<div class="warpper2">
+	<div class="content">1</div>
+	<div class="content">2</div>
+	<div class="content">3</div>
+	<div class="content">4</div>
+	<div class="content">5</div>
+	<div class="content">6</div>
+	<div class="content">7</div>
+	<div class="content">8</div>
+	<div class="content">9</div>
+</div>
+</div>
+</body>
+</html>
