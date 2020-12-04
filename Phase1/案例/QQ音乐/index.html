@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>QQ音乐</title>
+	<link type="text/css" rel="stylesheet" href="./css/Global.css">
+	<link rel="stylesheet" type="text/css" href="./css/home.css">
+</head>
+<body>
+	 <!-- 导航 -->
+	<div class="navbar">
+		<div class="container">
+			<div class="nav_t">
+				<div class="logo pull-left">
+					<img src="./images/logo.png">
+				</div>
+				<ul class="pull-left">
+					<li><a href="#">音乐馆</a></li>
+					<li><a href="#">我的音乐</a></li>
+					<li><a href="#">客户端</a></li>
+					<li><a href="#">开放平台</a></li>
+					<li><a href="#">VIP</a></li>
+				</ul>
+				<div class="search pull-left">
+					<input type="text"  placeholder="请输入音乐、MV、歌单、用户" />
+					<img src="./images/search.png" width="24" id="search_icon">
+				</div>
+				
+
+			</div>
+			<div class="nav-b"></div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		// 获取放大镜那个img元素
+		var searchIcon = document.getElementById('search_icon')
+
+		// 鼠标移入
+		searchIcon.onmouseover = function() {
+				searchIcon.setAttribute('src','./images/search_h.png')
+		}
+
+		// 鼠标移出
+		searchIcon.onmouseout = function() {
+				searchIcon.setAttribute('src','./images/search.png')
+		}
+	</script>
+</body>
+</html>

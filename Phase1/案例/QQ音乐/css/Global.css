@@ -1,0 +1,48 @@
+/*清除元素自带样式*/
+* {
+	margin:0;
+	padding:0;
+}
+ul {
+	list-style-type:none;
+}
+
+a {
+	text-decoration:none;
+	/*继承祖先元素的字体颜色*/
+	color:inherit;
+}
+
+body {
+	font-size:14px;
+	font-family: '微软雅黑';
+	color:#424242;
+}
+
+/*居中盒子*/
+.container {
+	width:1200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.pull-left {
+	float: left;
+}
+.pull-right {
+	float: right;
+}
+
+.clearfix::after {
+	content:'';
+	display: block;
+	width: 0;
+	height: 0;
+	clear:both;
+	visibility:hidden;
+}
+
+input {
+	outline: none;
+	border:none;
+}
