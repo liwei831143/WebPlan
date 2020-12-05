@@ -8,25 +8,206 @@
 			margin: 0;
 			padding: 0;
 		}
-		ul{
+		.warpper{
+			 width: 100%;
+            background: #fff;
+            /*margin-left: auto;
+            margin-right: auto;*/
+			
+
+		}
+		.head{
+			height: 60px;
+			line-height: 60px;
+		}
+		.head .left ul{
 			list-style-type: none;
             padding-left: 24px;
 
 		}
 
-		a{
+		.head .left ul a{
 			text-decoration: none;
 			color: #123;
-			margin-top: 19px;
 			margin-left: 31px;
             float: left;
 
 		}
+		.left{
+			width: 440px;
+			height: 60px;
+			float: left;
+
+
+		}
+		.left ul li{
+			font-size: 12px;
+		}
+        .left ul li:hover{
+        	color:red;
+
+        }
+        .right{
+        	float: right;
+        	width: 160px;
+        	height: 60px;
+        	
+        	
+        }
+        .right span{
+        	font-size: 12px;
+        	margin-right: 10px;
+        }
+        .right span:hover{
+        	color:red;
+        }
+       button{
+       	background-color: 
+       }
+       
+        .concent .logo {
+        	width: 270px;
+        margin-right: auto;
+        margin-left: auto;
+         
+        }
+         .concent .logo img {
+          margin-top: 50px;
+          width: 270px;
+         
+        }
+        .ss .k{
+        	width: 700px;
+        	height: 44px;
+        	margin-left: auto;
+        	margin-right: auto;
+        	position: relative;
+        }
+        .ss .k input{
+
+              width: 530px;
+              height: 44px;
+              border-radius: 5px 0 0 5px;
+              border:2px solid #0066FF;
+              border-right: none;
+              padding-left: 20px;
+        }
+        .ss .k img{
+        	width: 30px;
+        	position: absolute;
+        	top:7px;
+        	right: 160px;
+        }
+        .button2{
+        	float: right;
+        	width: 148px;
+        	height: 48px;
+        	border: 0;
+        	background-color: #4e71f2;
+        	color: #fff;
+        	border-radius: 0 8px 8px 0;
+        }
+        .list .list_t{
+        	width: 700px;
+        	height: 24px;
+        	margin-left: auto;
+        	margin-right: auto;
+        	margin-top: 50px;
+        	color: #9195a3;
+        	margin-bottom: 4px;
+        }
+         .list .list_t .list_t_l{
+         	float: left;
+         }
+         .list .list_t .list_t_r{
+         	float: right;
+         }
+         .list .list_b{
+        	width: 700px;
+        	margin-left: auto;
+        	margin-right: auto;
+        	margin-top: 5px;
+        	 line-height: 30px;
+        }
+         .list .list_b span{
+         	color: #626675;
+         	font-size: 14px;
+         }
+         .list .list_b ul{
+         	list-style-type: none;
+         }
+         .list .list_b ul a{
+         	text-decoration: none;
+			color: #123;
+			float: left;
+         }
+        .list .list_b .list_b_l
+        {
+        	width: 350px;
+        	height: 100px;
+        	
+        	float:left;
+           
+        }
+         .list .list_b .list_b_r{
+        	float:right;
+        }
+        .foot{
+        	width: 1404px;
+        	height: 40px;
+        	background-color:#fbfbfb;
+        	position: fixed;
+        	bottom: 0;
+        	left: 0;
+        	/*overflow: hidden;*/
+        	line-height: 40px;
+        	margin: 0 30px;
+
+
+        }
+        .foot .foot_l{
+        	width: 620px;
+        	height: 40px;
+        	float: left;
+
+
+
+
+        }
+        .foot span{
+        	font-size: 12px;
+        	color: #9195a3;
+        	margin-left: 5px;
+        	display: line-block;
+
+        } 
+         .foot span:hover{
+            color:#123;
+         }
+          .foot .foot_r {
+          	width: 540px;
+          	height: 40px;
+          	float: right;
+        
+          }
+           .foot .foot_r ul{
+           	list-style-type: none;
+           }
+            .foot .foot_r ul li{
+            	font-size: 12px;
+        	   color: #9195a3;
+        	   float: left;
+        	   margin-left: 10px;
+            }
+             .foot .foot_r ul li:hover{
+             	color:#123;
+             }
 	</style>
 </head>
 <body>
 <div class="warpper">
-	<div class="left">
+	<div class="head">
+	   <div class="left">
 		<ul>
 	       <a href="#"><li>新闻</li></a>
 	       <a href="#"><li>地图</li></a>
@@ -36,9 +217,73 @@
 	       <a href="#"><li>学术</li></a>
 	       <a href="#"><li>更多</li></a>
         </ul>
-    </div>
-		<div class="right"></div>
-</div>
+        </div>
+		<div class="right">
+			<span>设置</span>
+			<button>登录</button>
+		</div>
+	</div>
+	<div class="concent">
+		<div class="logo">
+			<img src=".././image/11.gif">
+		</div>
+		<div class="ss">
+			<div class="k">
+				<input type="text" >
+				<img src=".././image/crame.png">
+				<button class="button2">百度一下</button>
+			</div>
 
+		</div>
+	</div>
+	<div class="list">
+		<div class="list_t">
+		<div class="list_t_l">
+			百度热搜
+		</div>
+		<div class="list_t_r">换一换</div>
+	</div>
+	<div class="list_b">
+		<div class="list_b_l">
+		<ul>
+			<a href="#"><li>1 <span>重庆永川煤矿事故已致18人遇难</span></li></a><br>
+	       <a href="#"><li>2 <span>重庆永川煤矿事故已致18人遇难</span></li></a><br>
+	       <a href="#"><li>3 <span>重庆永川煤矿事故已致18人遇难</span></li></a><br>
+	   </ul>
+	     </div>
+	     <div class="list_b_r">
+	     	<ul>
+	       <span>&nbsp;&nbsp;外媒:伊朗要拜登取消制裁证明善意</span>
+	       <a href="#"><li>4</li></a><br>
+	        <span>&nbsp;&nbsp;外媒:伊朗要拜登裁证明善意</span>
+	       <a href="#"><li>5</li></a><br>
+	        <span>&nbsp;&nbsp;外媒:伊朗要拜登取消制裁证明善意</span>
+	       <a href="#"><li>6</li></a><br>
+	       </ul>
+	       </div>
+		
+	</div>
+</div>
+<div class="foot">
+		<div class="foot_l">
+			<span>设为首页<span>
+			<span>关于百度<span>
+			<span>About Baidu<span>
+			<span>百度营销<span>
+			<span>使用百度前必读<span>
+			<span>意见反馈<span>
+			<span>帮助中心<span>
+			<span>有奖调研<span>
+		</div>
+		<div class="foot_r">
+			<ul>
+				<li>(京)-经营性-2017-0020</li>
+				<li>-2017-0020</li>
+				<li>(京)-经营性</li>
+				<li> 微微</li>
+			</ul>
+		</div>
+	</div>
+</div>
 </body>
 </html>
