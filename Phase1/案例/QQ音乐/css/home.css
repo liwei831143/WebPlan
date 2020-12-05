@@ -1,3 +1,9 @@
+.navbar {
+	background-color: #fff;
+}
+.navbar .nav_t {
+	border-bottom: 1px solid #ddd;
+}
 .nav_t {
 	height:90px;
 	line-height:90px;
@@ -7,11 +13,18 @@
 .logo img {
 	margin-top:20px;
 }
+.nav_t ul {
+	margin-left: 20px;
+}
 .nav_t ul li {
 	float: left;
 	width:94px;
 	font-size:18px;
 	text-align: center;
+}
+.nav_t ul li.active {
+	background-color:#31c27c;
+	color:#fff;
 }
 .nav_t ul li:hover {
 	color:#31c27c;
@@ -34,4 +47,134 @@
 	text-indent:10px;
 	font-size:14px;
 	padding-right:20px;
+}
+.nav_t>span {
+	font-size:16px;
+	margin-left: 24px;
+}
+.nav_t>span:hover {
+	color:#31c27c;
+}
+.nav_t>.vip_btn {
+	position:relative;
+	width: 120px;
+	height:42px;
+	background-color: #31c27c;
+	border-radius:4px;
+	color:#fff;
+	margin-left:15px;
+}
+.nav_t>.chong_btn {
+	position:relative;
+	width: 80px;
+	height:42px;
+	border-radius:4px;
+	margin-left:15px;
+	border:1px solid #ddd;
+}
+.nav_t>button i {
+	position:absolute;
+	top:50%;
+	margin-top:-3px;
+	right:10px;
+	width:0;
+	height: 0;
+	border:5px solid transparent;
+	border-top-color:#fff;
+}
+.nav_t>button.chong_btn i {
+	border-top-color:#000;
+
+}
+
+.nav-b ul li {
+	float: left;
+	line-height: 50px;
+	padding:0 24px;
+	font-size:15px;
+}
+.nav-b ul li:hover {
+	color:#31c27c;
+}
+.nav-b ul li.active {
+	color: #31c27c;
+}
+
+
+
+
+
+
+.playlist {
+	margin-top: 50px;
+}
+.playlist h2 {
+	text-align:center;
+	font-size: 32px;
+	font-weight:600;
+}
+.tuijian_list {
+	margin-top: 36px;
+	text-align: center;
+}
+.tuijian_list ul {
+	display:inline-block;
+}
+.tuijian_list ul li {
+	float: left;
+	padding:0 20px;
+}
+.tuijian_wrapper {
+	margin-top: 34px;
+}
+.tuijian_wrapper ul li {
+	width:226px;
+	float: left;
+	margin-left: 17.5px;
+}
+.tuijian_wrapper ul li div img {
+	width: 100%;
+}
+.tuijian_wrapper li .playlist_name {
+	margin-top: 20px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.tuijian_wrapper li .playlist_name a:hover {
+	color:#31c27c;
+}
+.tuijian_wrapper li .playlist_info {
+	color:#999;
+}
+.newsong_list {
+	margin-top: 34px;
+}
+.newsong_list ul {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.newsong_list li{
+	display: flex;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #eee;
+	width: 30%;
+	margin-right: 3%;
+	padding-bottom: 10px;
+}
+.song_info {
+	margin-left: 10px;
+	width: 245px;
+	height: 87px;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+}
+.song_time {
+	line-height: 87px;
+	color:#999;
+}
+.xindie li {
+	margin-bottom: 20px;
 }
