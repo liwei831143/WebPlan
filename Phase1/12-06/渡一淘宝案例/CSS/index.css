@@ -1,0 +1,22 @@
+
+.head
+{
+	width: 1190px;
+	height: 35px;
+	background-color: #f4f4f4;
+	margin:0 36px;
+	line-height: 35px;
+}
+.head .head_l{
+	width: 292px;
+	/*height: 35px;
+	background-color: red;*/
+
+}
+.head .head_l  li{
+	float: left;
+	font-size: 12px;
+	padding-left: 7px;
+}
+
+
