@@ -16,11 +16,17 @@
 .nav_t ul li:hover{
 	color:#31c27c;
 }
-.czw{
-	background-color: red;
+.nav_t .search{
+	position: relative;
+}
+    
+.nav_t .search img{
+	position: absolute;
+	right: 10px;
+	top:50%;
 
 }
-.nav_t input{
+.nav_t .search input{
      width: 220px;
      height: 38px;
      font-size: 14px;
@@ -28,5 +34,7 @@
      margin-top:25px;
      border-radius: 4px;
      text-indent: 10px;
+     padding-right: 10px;
+
     
 }
