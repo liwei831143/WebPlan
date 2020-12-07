@@ -54,6 +54,7 @@
 	background-color: #ffffff;
 	margin-right: auto;
 	margin-left: auto;
+
 }
 .headsearch .headsearch_ss{
 	width: 700px;
@@ -61,22 +62,43 @@
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 20px;
+	line-height: 121px;
+	
 }
 .headsearch .headsearch_ss input{
 	width: 556px;
 	height:40px;
-	border-radius: 10px 0 0 10px;
+	border-radius: 50px 0 0 50px;
 	border: 2px solid  #ff5000;
 	border-right: none;
-
-
+    
 }
 .headsearch .headsearch_ss button{
 	width: 74px;
-	height: 42px;
+	height: 44px;
 	background-color:  #ff5000;
-	border-radius: 0 10px 10px 0;
+	border-radius: 0 50px 50px 0;
 	border: 2px solid  #ff5000;
 	color: #fff;
-	font-size: 18px;
+	font-size: 12px;
+
+}
+.headsearch .headsearch_ft{
+	width: 630px;
+	height: 25px;
+	position: relative;
+	top: 40px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.headsearch .headsearch_ft li a{
+	float: left;
+	line-height: 25px;
+	font-size: 12px;
+	padding-left: 10px;
+	
+
+}
+.headsearch .headsearch_ft li a:hover{
+	color: #ff5000;
 }
