@@ -40,7 +40,7 @@
 /*头部广告*/
 
 .headad{
-	margin-top: 20px;
+	margin-top: 10px;
 	height: 120px;
 	background-color: pink;
 	
@@ -55,7 +55,7 @@
 	float: left;
 	}
 .headad ul{
-	/*margin-top: 13px;*/
+	margin-top: 13px;
 }
 .headad li{
 	width: 209px;
