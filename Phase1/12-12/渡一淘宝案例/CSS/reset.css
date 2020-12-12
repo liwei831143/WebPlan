@@ -1,0 +1,28 @@
+*{
+	padding:0;
+	margin: 0;
+}
+body{
+	background-color: #f4f4f4;
+	color: #3c3c3c;
+	margin-right: auto;
+	margin-left: auto;
+	margin: 0 36px;
+}
+.f4{
+	background-color: #f4f4f4;
+}
+.f5{
+	background-color: #f5f5f5;
+}
+img{
+	border: 0;
+}
+ul{
+	list-style-type: none;
+}
+a{
+	text-decoration: none;
+	color: #6c6c6c;
+	
+}
