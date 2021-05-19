@@ -1,0 +1,198 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+
+            list-style-type: none;
+        }
+
+        .box {
+            width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .top {
+            width: 700px;
+            height: 30px;
+            background-color: rgb(248, 153, 204);
+            line-height: 30px;
+        }
+
+        .top .left {
+            float: left;
+
+        }
+
+        .top .right {
+            float: right;
+            margin-right: 50px;
+        }
+
+        .butoom {
+            width: 100%;
+            height: 160px;
+            background-color: rgb(247, 203, 123);
+        }
+
+        ul {
+            width: 100%;
+            color: rgb(190, 61, 141);
+            padding: 0;
+        }
+
+        ul li {
+            float: left;
+            width: 50%;
+
+
+        }
+
+        span {
+            margin-left: 50px;
+        }
+
+        ul li a {
+            text-decoration: none;
+        }
+
+        ul li a:hover {
+            color: blue;
+        }
+
+        #ul1,
+        #ul2 {
+            display: none;
+        }
+
+        .daohang {
+            width: auto;
+            height: 30px;
+            background-color: crimson;
+        }
+
+        .daohang .dhleft {
+            width: 500px;
+            height: 30px;
+            background-color: darkorange;
+        }
+
+        .dhleft ul {
+
+            float: left;
+        }
+
+        .dhleft ul li {
+            width: 50px;
+            line-height: 30px;
+        }
+
+        .daohang .dhright {
+            width：200px;
+            background-color: darkturquoise;
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="daohang">
+        <div class="dhleft">
+            <ul>
+                <li>新闻</li>
+                <li>好123</li>
+                <li>地图</li>
+                <li>直播</li>
+                <li>视频</li>
+                <li>贴吧</li>
+                <li>学术</li>
+                <li>更多</li>
+            </ul>
+        </div>
+        <div class="dhrigt">
+            <span>设置</span>
+            <button>登录</button>
+        </div>
+    </div>
+    <div class="box">
+        <div class="top">
+            <span class="left" id="rebang">百度热搜</span>
+            <span class="right" id="huanyihuan">换一换</span>
+        </div>
+        <div class="butoom">
+            <ul id="ul1">
+                <li>
+                    <span>1</span>
+                    <a href="https://www.taobao.com">辽宁新增新蒄病毒</a>
+                </li>
+                <li>
+                    <span>4</span>
+                    <a href="https://www.taobao.com">辽宁新增新蒄病毒</a>
+                </li>
+                <li>
+                    <span>2</span>
+                    <a href="https://www.taobao.com">辽宁新增新蒄病毒</a>
+                </li>
+                <li>
+                    <span>5</span>
+                    <a href="https://www.taobao.com">辽宁新增新蒄病毒</a>
+                </li>
+                <li>
+                    <span>3</span>
+                    <a href="https://www.taobao.com">辽宁新增新蒄病毒</a>
+                </li>
+                <li>
+                    <span>6</span>
+                    <a href="https://www.taobao.com">辽宁新增新蒄病毒</a>
+                </li>
+            </ul>
+            <ul id="ul2">
+                <li>
+                    <span>7</span>
+                    <a href="https://www.taobao.com">辽宁新增新蒄病毒</a>
+                </li>
+                <li>
+                    <span>10</span>
+                    <a href="https://www.taobao.com">辽宁新增新蒄病毒</a>
+                </li>
+                <li>
+                    <span>8</span>
+                    <a href="https://www.taobao.com">辽宁新增新蒄病毒</a>
+                </li>
+                <li>
+                    <span>11</span>
+                    <a href="https://www.taobao.com">辽宁新增新蒄病毒</a>
+                </li>
+                <li>
+                    <span>9</span>
+                    <a href="https://www.taobao.com">辽宁新增新蒄病毒</a>
+                </li>
+                <li>
+                    <span>12</span>
+                    <a href="https://www.taobao.com">辽宁新增新蒄病毒</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        ul1 = document.querySelector("#ul1")
+        ul2 = document.querySelector("#ul2")
+        ul1.style.display = "block"
+        huan = document.querySelector('#huanyihuan')
+        huan.onclick = function () {
+            if (getComputedStyle(ul1).display === 'block') {
+                ul1.style.display = 'none'
+                ul2.style.display = 'block'
+            } else {
+                ul1.style.display = 'block'
+                ul2.style.display = 'none'
+            }
+        }
+    </script>
+</body>
+
+</html>
