@@ -68,26 +68,32 @@
         #ul2 {
             display: none;
         }
+        .top-wai {
+            margin-top: 20px;
+        }
 
         .daohang {
-            width: auto;
+            width: 1200px;
             height: 30px;
+<<<<<<< HEAD
             background-color: crimson;
             padding-left: 30px;
             padding-right:30px;
+=======
+            margin-left:auto;
+            margin-right:auto;
+>>>>>>> 1f95d85a665c0267d212f3d6ebf27f34254b7029
         }
 
         .daohang .dhleft {
             width: 800px;
             height: 30px;
-            background-color: darkorange;
+            float: left;
         }
         .daohang .dhleft ul li a {
             color: black;
         }
         .dhleft ul {
-
-            float: left;
         }
 
         .dhleft ul li {
@@ -95,14 +101,44 @@
             line-height: 30px;
         }
 
+<<<<<<< HEAD
         .daohang .dhright span{
         
             margin-right:30px;
+=======
+        .daohang .dhright {
+            width:200px;
+            float: right;
+>>>>>>> 1f95d85a665c0267d212f3d6ebf27f34254b7029
+        }
+
+        .btn {
+            background: blue;
+            color:#fff;
+            border:none;
+            border-radius:4px;
+            padding-left:10px;
+            padding-right:10px;
+        }
+
+
+        .juzhoingkuang {
+            width:700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .jz-top {
+            text-align: center;
+        }
+        .jz-bottom {
+            height:40px;
+            background-color: #ff0;
         }
     </style>
 </head>
 
 <body>
+<<<<<<< HEAD
     <div class="daohang">
         <div class="dhleft">
             <ul>
@@ -114,12 +150,44 @@
                 <li><a href="#">学术</a></li>
                 <li><a href="#">更多</a></li>
             </ul>
-        </div>
-        <div class="dhrigt">
-            <span>设置</span>
-            <button>登录</button>
+=======
+    <!-- 最外层 -->
+    <div class="top-wai">
+        <!-- 居中那个div -->
+        <div class="daohang">
+            <!-- 左边 -->
+            <div class="dhleft">
+                <ul>
+                    <li>新闻</li>
+                    <li>好123</li>
+                    <li>地图</li>
+                    <li>直播</li>
+                    <li>视频</li>
+                    <li>贴吧</li>
+                    <li>学术</li>
+                    <li>更多</li>
+                </ul>
+            </div>
+            <!-- 右边 -->
+            <div class="dhright">
+                <span style="margin-right:20px;">设置</span>
+                <button class="btn">登录</button>
+            </div>
+>>>>>>> 1f95d85a665c0267d212f3d6ebf27f34254b7029
         </div>
     </div>
+
+
+    <div class="zhongjian">
+        <div class="juzhoingkuang">
+            <div class="jz-top">
+                <img src="https://www.baidu.com/img/PCtm_d9c8750bed0b3c7d089fa7d55720d6cf.png" alt="">
+            </div>
+            <div class="jz-bottom"></div>
+        </div>
+    </div>
+
+
     <div class="box">
         <div class="top">
             <span class="left" id="rebang">百度热搜</span>

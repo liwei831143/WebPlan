@@ -1,0 +1,200 @@
+<!-- DTD文档声明 （声明是哪一个html版本） -->
+<!DOCTYPE html>
+<!-- html标签是根标签，lang属性 lang属性的值为en 属性名=属性值   en就是English的缩写  zh-CN是中文  -->
+<html lang="en">
+<!-- head是网页的头部 head的内容是让电脑看的，不是让人看的（除了title） -->
+
+<head>
+    <!-- charset属性用来指定字符集  utf-8是万国码 全世界的语言都能显示 -->
+    <meta charset="utf-8">
+    <!-- title是网页标题 -->
+    <title>0517</title>
+
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+        .box {
+            width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 14px;
+        }
+
+        .top {
+            height: 30px;
+            width: 100%;
+            line-height:30px;
+            margin-bottom: 10px;
+        }
+
+        .bottom {
+            width: 100%;
+            /* background-color: #ff0; */
+        }
+        .rebang {
+            float: left;
+        }
+        .huan {
+            float: right;
+            color:#ddd;
+            cursor: pointer;
+        }
+
+        ul li {
+            float: left;
+            width: 50%;
+            margin-bottom: 20px;
+        }
+        ul li a {
+            margin-left: 10px;
+            color:#424242;
+            text-decoration: none;
+        }
+        ul li a:hover {
+            color:blue;
+        }
+        .one {
+            color:#f00;
+        }
+        .two {
+            color:#ff0;
+        }
+        .three {
+            color:pink;
+        }
+
+        #ul1,#ul2 {
+            display: none;
+        }
+    </style>
+</head>
+
+<!-- body的内容是显示在网页的，给人看的 -->
+
+<body>
+    <!-- Top -->
+
+
+
+    <!-- 最外层的盒子 -->
+    <div class="box">
+        <!-- 上边的盒子 -->
+        <div class="top">
+            <span class="rebang" id="rebang">百度热榜</span>
+            <span class="huan" id="huanyihuan">换一换</span>
+        </div>
+        <!-- 下边的盒子 -->
+        <div class="bottom">
+            <ul id="ul1">
+                <li>
+                    <span class="one">1</span>
+                    <a href="https://taobao.com">辽宁新增4例本土确诊病例</a>
+                </li>
+                <li>
+                    <span>4</span>
+                    <a href="https://taobao.com">3000多万男性要打光棍?统计局回应</a>
+                </li>
+                <li>
+                    <span class="two">2</span>
+                    <a href="https://taobao.com">赵立坚解读火星车祝融号名字寓意</a>
+                </li>
+                <li>
+                    <span>5</span>
+                    <a href="https://taobao.com">为何沈阳流调里必有鸡架？</a>
+                </li>
+                <li>
+                    <span class="three">3</span>
+                    <a href="https://taobao.com">中方敦促美对巴以局势承担应尽责任</a>
+                </li>
+                <li>
+                    <span>6</span>
+                    <a href="https://taobao.com">台湾单日新增333例本土确诊</a>
+                </li>
+            </ul>
+            <ul id="ul2">
+                <li>
+                    <span>7</span>
+                    <a href="https://taobao.com">辽宁新增4例本土确诊病例</a>
+                </li>
+                <li>
+                    <span>10</span>
+                    <a href="https://taobao.com">3000多万男性要打光棍?统计局回应</a>
+                </li>
+                <li>
+                    <span >8</span>
+                    <a href="https://taobao.com">赵立坚解读火星车祝融号名字寓意</a>
+                </li>
+                <li>
+                    <span>11</span>
+                    <a href="https://taobao.com">为何沈阳流调里必有鸡架？</a>
+                </li>
+                <li>
+                    <span>9</span>
+                    <a href="https://taobao.com">中方敦促美对巴以局势承担应尽责任</a>
+                </li>
+                <li>
+                    <span>12</span>
+                    <a href="https://taobao.com">台湾单日新增333例本土确诊</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        // document.querySelector(选择器)  用来找页面里的元素
+
+        // 找到ul1
+        ul1 = document.querySelector('#ul1')
+        // 找到ul2
+        ul2 = document.querySelector('#ul2')
+
+        // 用js控制元素的样式  diplay是block
+        ul1.style.display = 'block'
+
+        // 找到换一换
+        huan = document.querySelector('#huanyihuan') 
+
+        // 点击换一换
+        // 给换一换这个元素添加一个事件监听
+        // onclick就是鼠标左键点一下
+        huan.onclick = function () {
+            // alert就是弹窗提示
+            // alert('你点击了！')
+
+            // 如果ul1显示了 就隐藏ul1，显示ul2
+            // 如果ul2显示了 就隐藏ul2，显示ul1
+
+
+            // getComputedStyle() 用来获取元素的样式
+
+
+
+
+            // 如果ul1显示了 就隐藏ul1，显示ul2
+            // 如果ul1没显示（那就是ul2显示了）  就隐藏ul2，显示ul1
+            if(getComputedStyle(ul1).display === 'block') {
+                ul1.style.display = 'none'
+                ul2.style.display = 'block'
+            }else{
+                ul1.style.display = 'block'
+                ul2.style.display = 'none' 
+            }
+
+
+        }
+
+        // function () {
+            
+        // }
+
+    </script>
+</body>
+
+</html>
