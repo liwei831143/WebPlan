@@ -1,0 +1,42 @@
+<!--
+ * @Date: 2021-05-21 21:42:37
+ * @LastEditors: Aiva
+ * @LastEditTime: 2021-05-21 22:07:27
+ * @FilePath: \WebPlan\Phase1\2021-05\05-21\课件\index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3动画</title>
+    <style>
+        div {
+            background-image: linear-gradient(to bottom right,red,pink);
+            position:absolute;
+            left: 0;
+            top:0;
+            right:0;
+            bottom: 0;
+            animation-name: yidong;
+            animation-duration: 2s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        @keyframes yidong {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity:1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
