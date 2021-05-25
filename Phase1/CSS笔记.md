@@ -6,11 +6,11 @@ CSS引入方式
 
 ```html
 <link rel="stylesheet" href="./xxx.css" />
-`
+```
 
 2. 内联样式表   （在head标签里用style标签包裹的css样式）
 
-```html
+​```html
 <head>
     <style>
         div {
@@ -19,10 +19,10 @@ CSS引入方式
 
     </style>
 </head>
-`
+```
 3. 行内样式      （就是在标签内添加style属性，值就是css样式）
 
-```html
+​```html
     <div style="background:red;"></div>
 ```
 
