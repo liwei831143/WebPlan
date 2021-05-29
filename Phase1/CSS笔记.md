@@ -24,12 +24,25 @@ CSS引入方式
 
 ​```html
     <div style="background:red;"></div>
+        <div class="box1"></div>
 ```
 
 
 
+## margin塌陷问题
 
+1. 垂直方向的两个父子级元素，margin-top会出现塌陷现象
+2. 垂直方向的两个兄弟元素，margin-top或者margin-bottom取**最大值**
 
+解决方法
+- 父元素设置overflow:hidden;
+- 父元素设置浮动
+- 父元素设置边框
+
+解决塌陷问题的原理
+
+原理就是触发这个元素为BFC元素
+block format content  块级格式化上下文
 
 
 
