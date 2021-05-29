@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>花瓣网</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <div class="index_background">
+        <div class="head">
+            <div class="head_nav">
+                <div class="nav_left">
+                    <ul>
+                        <li><a href="#">首页</a>
+
+                        </li>
+                        <li><a href="#">发现</a></li>
+                        <li><a href="#">设计大赛</a></li>
+                    </ul>
+                </div>
+                <div class="nav_right">
+                    <img src="https://huaban.com/img/navigator/live.svg">
+                    <button>登录/注册</button>
+                </div>
+            </div>
+        </div>
+        <div class="index_box">
+            <div class="title">
+                花瓣，陪你做生活的设计师
+            </div>
+            <div class="p">
+                现在每天超过 100 万专业设计师和生活的设计师们使用花瓣浏览器采集工
+                具从全球网站采集超过 200 万灵感图片，在花瓣上线以来，已有超过 20
+                亿的采集被数千万花瓣用户采集到花瓣上，他们是花瓣真正的创造者。
+            </div>
+            <div class="input_query">
+                <input type="text" id="fname" name="fname" placeholder="每天超过3000万人搜索花的设计灵感" value><img src="./放大镜.png">
+            </div>
+            <div class="huanyihuan">
+                <ul id="ul1">
+                    <li><a href="#">最新</a></li>
+                    <li><a href="#">炫彩手机壁纸</a></li>
+                    <li><a href="#">古风人物壁纸</a></li>
+                    <li><a href="#">满天星</a></li>
+                    <li><a href="#">书法</a></li>
+
+
+                    <li><a href="#">鸡年素材</a></li>
+                    <li><a href="#">二十四节气插画</a></li>
+                    <li><a href="#">好运剪纸</a></li>
+                    <li><a href="#">康乃馨</a></li>
+                    <li><a href="#">大鱼海棠</a></li>
+
+
+                    <li><a href="#">旅行风景</a></li>
+                    <li><a href="#">炫彩手机壁纸</a></li>
+                    <li><a href="#">古风人物壁纸</a></li>
+                    <li><a href="#">满天星</a></li>
+                    <li><a href="#">宠物</a></li>
+
+
+                    <li><a href="#">最新</a></li>
+                    <li><a href="#">极简服饰</a></li>
+                    <li><a href="#">游戏登录界面</a></li>
+                    <li><a href="#">手机摄影</a></li>
+                    <li><a href="#">胸花</a></li>
+                </ul>
+                <ul id="ul2">
+                    <li><a href="#">春秋街拍</a></li>
+                    <li><a href="#">游戏壁纸</a></li>
+                    <li><a href="#">ico图标</a></li>
+                    <li><a href="#">儿童摄影</a></li>
+                    <li><a href="#">卡通字体</a></li>
+
+
+                    <li><a href="#">3d打印</a></li>
+                    <li><a href="#">人物速写</a></li>
+                    <li><a href="#">万圣节素材</a></li>
+                    <li><a href="#">儿童画</a></li>
+                    <li><a href="#">梵高</a></li>
+
+
+                    <li><a href="#">水墨画</a></li>
+                    <li><a href="#">风景速写</a></li>
+                    <li><a href="#">星座手机壁纸</a></li>
+                    <li><a href="#">app配色</a></li>
+                    <li><a href="#">家居</a></li>
+
+
+                    <li><a href="#">按钮设计</a></li>
+                    <li><a href="#">手机主题</a></li>
+                    <li><a href="#">古风海报</a></li>
+                    <li><a href="#">渐变背景</a></li>
+                    <li><a href="#">滚边名片</a></li>
+                </ul>
+            </div>
+
+            <div class="huan" id="huanyipi">
+                <span>换一批</span>
+            </div>
+            <script>
+                // document.querySelector(选择器)  用来找页面里的元素
+        
+                // 找到ul1
+                ul1 = document.querySelector('#ul1')
+                // 找到ul2
+                ul2 = document.querySelector('#ul2')
+        
+                // 用js控制元素的样式  diplay是block
+                ul1.style.display = 'block'
+        
+                // 找到换一换
+                huan = document.querySelector('#huanyipi') 
+        
+                // 点击换一换
+                // 给换一换这个元素添加一个事件监听
+                // onclick就是鼠标左键点一下
+                huan.onclick = function () {
+                    // alert就是弹窗提示
+                    // alert('你点击了！')
+        
+                    // 如果ul1显示了 就隐藏ul1，显示ul2
+                    // 如果ul2显示了 就隐藏ul2，显示ul1
+        
+        
+                    // getComputedStyle() 用来获取元素的样式
+        
+        
+        
+        
+                    // 如果ul1显示了 就隐藏ul1，显示ul2
+                    // 如果ul1没显示（那就是ul2显示了）  就隐藏ul2，显示ul1
+                    if(getComputedStyle(ul1).display === 'block') {
+                        ul1.style.display = 'none'
+                        ul2.style.display = 'block'
+                    }else{
+                        ul1.style.display = 'block'
+                        ul2.style.display = 'none' 
+                    }
+        
+        
+                }
+        
+                // function () {
+                    
+                // }
+        
+            </script>
+            <!-- <script>
+            ul1=document.querySelector("#ul1")
+            ul2=document.querySelector("#ul2")
+            ul1.style.display="block"
+            huan=document.querySelector("huanyipi")
+            huan.onclick = function () {
+                if(getComputedStyle(ul1).display==="block"){
+                    ul1.style.display="none"
+                    ul2.style.display="block"
+                }
+                    else{
+                        ul1.style.display="block"
+                        ul2.style.display="none"
+                    
+                }
+            }
+            </script> -->
+        </div>
+        <div class="foot">
+            © Huaban 杭州纬音智网络有限公司 &nbsp;&nbsp;
+            <span>|</span>&nbsp;&nbsp;
+            <img src="./ic_record.png">浙公网安备 33010602001880号   &nbsp;&nbsp;
+            <span>|</span>&nbsp;&nbsp;备案信息: 浙B2-20110282-7   &nbsp;&nbsp;
+            <span>|</span>&nbsp;&nbsp;网络信息服务信用承诺书   
+        </div>
+    </div>
+
+</body>
+
+</html>
