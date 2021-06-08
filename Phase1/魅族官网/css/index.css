@@ -1,0 +1,25 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.wrapper_container{
+    margin-left: auto;
+    margin-right: auto;
+    height: 800px;
+    background-color: rgb(161, 165, 165);
+    /* 为什么包裹着下面的div他会不居中？ */
+}
+.head_concontainer{
+    width: 1240px;
+    height: 82px;
+    background-color: burlywood;
+    margin-left: auto;
+    margin-right: auto;
+}
+.head_log img{
+    width: 108px;
+    height: 21px;
+    line-height: 21px;
+    margin-top: 30px;
+    
+}

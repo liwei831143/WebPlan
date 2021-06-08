@@ -2,6 +2,13 @@
     margin: 0;
     padding: 0;
 }
+.wrapper_container{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+   
+}
 .header{
     width: 100%;
    height: 20px;
@@ -80,7 +87,7 @@
 .download{
     width: 100%;
    
-    background-color: rgb(190, 229, 193);
+    /* background-color: rgb(190, 229, 193); */
    
 }
 .download_container{
@@ -110,13 +117,13 @@
 }
 .wallpaper-categories{
     width: 100%;
-    background-color: dimgray;
+    /* background-color: dimgray; */
 
 }
 .categories_container{
     
-    height: 920px;
-    background-color: forestgreen;
+    height: 860px;
+    /* background-color: forestgreen; */
 }
 .categories_containertop{
     height: 50px;
@@ -136,7 +143,7 @@
     text-align: center;
     line-height: 50px;
     float: left;
-    color: #666;
+    /* color: #666; */
    
 }
 .categories_containertop ul li:hover{
@@ -165,4 +172,146 @@
     float: left;
     margin-left: 20px;
     margin-top: 10px;
+}
+
+.name{
+    width:380px ;
+    height: 30px;
+    background-color:rgba(65, 64, 64, 0.4);
+    position: absolute;
+    text-align: center;
+    line-height: 30px;
+    margin-left: 20px;
+    margin-top: 195px;
+    /* opacity:0.8;  */
+    color: #fff;
+    
+/* 有问题，li内的div不会分散叠加在一起了 */
+
+}
+.categories_containerdown_container{
+    width: 202px;
+    height: 55px;
+    margin-left: auto;
+    margin-right: auto;
+    padding:10px 0 35px;
+    
+
+}
+.categories_containerdown button{
+    width: 202px;
+    height: 55px;
+    background-color:rgb(248, 220, 130);
+    border: none;
+border-radius: 8px;  
+font-size: 18px;
+font-family: "微软雅黑";
+color：#333;
+line-height: 55px;}
+
+.categories_containerdown button:hover{
+    background-color: rgb(247, 209, 43);
+}
+.engine-intro_intro-section{
+    
+height: 600px;
+/* background-color: darkgreen; */
+text-align: center;
+
+}
+.engine-intro_intro-section h2{
+    font-size: 36px;
+
+}
+.engine-intro_intro-section p{
+    font-size: 20px;
+    line-height: 30px;
+    padding-top: 5px;
+
+}
+.video-list_container ul{
+   list-style: none;
+}
+.video-list_container ul li img{
+    width: 380px;
+    height: 213px;
+    float: left;
+    margin-left: 20px;
+    margin-top: 55px;
+}
+.video-list_container_button button { 
+    width: 202px;
+    height: 55px;
+    background-color:rgb(248, 220, 130);
+    border: none;
+border-radius: 8px;  
+font-size: 18px;
+font-family: "微软雅黑";
+color：#333;
+line-height: 55px;
+margin-top: 63px;
+   
+}
+.desktop-assistant-intro_intro-section{
+height: 650px;
+/* background-color: firebrick; */
+}
+.desktop-assistant-intro_intro-section h2{
+    font: 36px;
+    line-height: 50px;
+}
+.desktop-assistant-intro_intro-section p{
+    font: 20px;
+    line-height: 30px;
+    margin-top: 6px;
+}
+.features-wrapper_clearfix{
+    height: 428px;
+    /* background-color: fuchsia; */
+}
+.features-wrapper_clearfix_container_left img{
+    width: 726px;
+    height: 408px;
+    float: left;
+}
+.features-wrapper_clearfix_container_right{
+    width: 310px;
+    height: 276px;
+    /* background-color: gray; */
+    float: left;
+    margin-left: 66px;
+}
+.features-wrapper_clearfix_container_right ul {
+    list-style: none;
+   
+}
+.features-wrapper_clearfix_container_right ul li {
+    margin-bottom: 40px;}
+.features-wrapper_clearfix_container_right img{
+    width: 56px;
+    height: 56px;
+    /* background-color: blueviolet; */
+    float: left;
+    margin-top: 5px;
+}
+.features-wrapper_clearfix_container_right ul  li h4{
+    color: black;
+    font-size: 24px;
+
+}
+.features-wrapper_clearfix_container_right ul  li h4:hover{
+    color: coral;
+} 
+.features-wrapper_clearfix_container_right_button button{
+    width: 202px;
+    height: 55px;
+    background-color:rgb(248, 220, 130);
+    border: none;
+border-radius: 8px;  
+font-size: 18px;
+font-family: "微软雅黑";
+color：#333;
+line-height: 55px;
+margin-top: 63px;
+   
 }

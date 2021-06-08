@@ -1,0 +1,147 @@
+
+.wrapper{
+    
+    background-image:url(../images/1.jpg);
+    position:absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center 0;
+    width:100%;
+    height: auto;
+
+}   
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.wrapper_container{
+    /* background-color: cadetblue; */
+    width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.header{
+    width: auto;
+    height: 43px;
+    /* background-color: darkgoldenrod ; */
+}
+.header_left{
+    width: 600px;
+    
+    /* background-color: darksalmon; */
+}
+.header_left ul{
+    list-style: none;
+}
+.header_left ul li{
+    width: 11%;
+    float: left;
+    line-height: 43px;
+    font-size: 14px;
+    
+}
+.header_left ul li a{
+    color: #666;
+}
+.header_left ul li :hover{
+    color: #fff;
+}
+.header_right{
+    width: 150px;
+    height: 43px;
+    /* background-color: dimgrey; */
+    float: right;
+}
+.header_right span{
+font-size: 14px;
+color: #fff;
+width: 30px;
+height: 15px;
+float: left;
+line-height: 43px;
+
+
+}
+.header_right img{
+    width: 32px;
+    height: 32px;
+    margin-top: 6px;
+    
+}
+.sbox{
+    width: 722px;
+    height: 163px;
+    /* background-color: gray; */
+    margin-top: 100px;
+    margin-left: 50px;
+    padding-bottom: 260px;
+}
+.sbox_container{
+    width: 300px;
+    height: 150px;
+}
+.sbox_container .block1{
+    width: 0px;
+    height: 0px;
+    background-color: crimson;
+    border-style: solid ;
+    border-width: 20px;
+    border-left-color: rgb(238, 133, 133);
+    border-bottom-color: yellow;
+    border-right-color: turquoise;
+    border-left-color:rgb(238, 196, 57);
+
+}
+.sbox_container .block1 p{
+    width: 150px;
+    position: relative;
+    top: -20px;
+    margin-left: 20px;
+    color: #fff;
+    font-family: "微软雅黑";
+    
+}
+.sbox_container .search input{
+    width: 490px;
+    height: 47px;
+    position: relative;
+    top: -20px;
+    margin-left: 170px;
+    border: none;
+    border-radius: 5px;
+}
+.sbox_container .search img{
+    width: 45px;
+    height: 45px;
+    position:absolute;
+    top: 185px;
+    left:660px;
+}
+.foot{
+    
+    height: 70px;
+    background-color: #666;
+    line-height: 35px;
+    
+}
+.foot_container{
+    width: 1200px;
+    top: 300px;
+}
+.foot_container ul{
+    list-style: none;
+  
+}
+.foot_container ul li{
+    float: left;
+    font-size: 12px;
+    margin-right: 24px;
+   
+    
+    
+
+}
+.foot_container ul li :hover{
+    color: violet;
+    text-decoration:underline;
+}
