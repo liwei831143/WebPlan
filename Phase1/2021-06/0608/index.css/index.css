@@ -1,0 +1,12 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.warpper{
+background-color: #000;
+}
+.warpper_container{
+    width: 360px;
+    background-color: lightsalmon;
+    
+}
