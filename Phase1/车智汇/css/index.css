@@ -106,23 +106,23 @@ height: 500px;
 
 .function{
     height: 467px;
-    background-color: #615b5b;
+   
+   
 }
 .function_container{
     width: 1200px;
-    height: 467px;
+    height:467px ;
+    margin-top: 510px;
     margin-left: auto;
     margin-right: auto;
-    /* background-color: crimson; */
-    margin-top: 510px;
-   
+    background-color: #f1eeee;
 }
 .function_containerl{
     width: 200px;
     height: 467px;
     text-align: center;
     line-height: 467px;
-    background-color: crimson;
+    /* background-color: crimson; */
     float: left;
    
 }
@@ -135,7 +135,7 @@ height: 500px;
 .function_containerr{
     width: 900px;
    height: 467px;
-    background-color: pink;
+    /* background-color: pink; */
     float:right;
     /* margin-left: 20px; */
     
@@ -143,8 +143,10 @@ height: 500px;
 .function_containerr .jrx{
     width:385px;
     height:126px;
-    background-color: #fff;
+    /* background-color: #fff; */
     margin-top: 80px;
+    float: left;
+
 }
 .function_containerr .jrx .jrx_l{
     width: 33px;
@@ -157,4 +159,111 @@ height: 500px;
     height:126px;
     /* background-color: darkkhaki; */
     float: right;
+}
+
+
+.function_containerr .wdx{
+    width:385px;
+    height:126px;
+    /* background-color: #fff; */
+    margin-top: 80px;
+    margin-left: 65px;
+    float: right;
+
+}
+.function_containerr .wdx .wdx_l{
+    width: 33px;
+    height: 35px;
+    /* background-color: darkorange; */
+    float: left;
+}
+.function_containerr .wdx .wdx_r{
+    width: 340px;
+    height:126px;
+    /* background-color: darkkhaki; */
+    float: right;
+}
+
+
+
+
+
+
+.introduce{
+
+    height: 761px;
+    
+}
+.introduce_container{
+    width: 1200px;
+    height: 761px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:#fff;
+}
+.introduce_containerl{
+    width: 300px;
+    height: 761px;
+    line-height: 761px;
+
+    text-align: center;
+    float: left;
+
+}
+.introduce_containerr{
+    width: 900px;
+    height: 761px;
+    float: right;
+}
+.che{
+    width: 235px;
+    height: 63.33px;
+    margin-top: 100px;
+    float: left;
+}
+.che_l{
+    float: left;
+    line-height: 63.33px;
+}
+.che_l img{
+    width: 27px;
+    height:27px;
+    margin-right: 10px;
+    
+}
+.che_r{
+    width: 198px;
+    height: 63.33;
+    float:right;
+}
+.che_r span{
+    font-family: "微软雅黑";
+}
+
+
+
+.an{
+    width: 235px;
+    height: 63.33px;
+    margin-top: 100px;
+    float: left;
+    margin-left: 65px;
+}
+.an_l{
+    float: left;
+    line-height: 63.33px;
+}
+.an_l img{
+    width: 27px;
+    height:27px;
+    margin-right: 10px;
+    
+}
+.an_r{
+    width: 198px;
+    height: 63.33;
+    float:right;
+}
+.an_r span{
+    font-family: "微软雅黑";
 }
